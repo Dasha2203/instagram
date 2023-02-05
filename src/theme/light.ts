@@ -6,7 +6,8 @@ export const lightTheme: typeTheme = {
         primary: colors.white,
         inversePrimary: colors.black,
         secondary: colors.gray,
-        darkSecondary: colors.darkGray
+        darkSecondary: colors.darkGray,
+        active: colors.blue
     },
     fontSizes: {
         extraSmall: "12px",

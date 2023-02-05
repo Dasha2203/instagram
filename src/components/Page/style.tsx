@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import {LogoLink} from "../Logo/Logo";
 import {Container} from "../UI";
 
 export const PageContainer = styled.div`
-  padding-top: 37px;
+  margin-left: 166px;
+  padding: 37px 10px 0;
   
   ${Container} {
     margin-top: 69px;
