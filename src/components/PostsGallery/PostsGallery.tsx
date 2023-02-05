@@ -1,6 +1,7 @@
 import React, {useEffect, useMemo} from 'react';
 import PostImage from "../PostImage/PostImage";
 import {GalleryRow} from "./style";
+import {Container} from "../PostImage/style";
 
 const posts = [
     {
@@ -41,8 +42,10 @@ const posts = [
     }
 ]
 
+const postsInRow = 4
+
 const PostsGallery = () => {
-    const chunksPosts = useMemo(() => chunksArray(posts, 4), [posts])
+    const chunksPosts = useMemo(() => chunksArray(posts, postsInRow), [posts])
 
     function chunksArray(arr: any[], size: number) {
         const res = [];
@@ -61,6 +64,13 @@ const PostsGallery = () => {
                         {rowPosts.map((post: { img: string; id: React.Key | null | undefined; }, index: any) => (
                             <PostImage img={post.img} key={post.id}/>
                         ))}
+                        {
+                            rowPosts.length !== postsInRow ?
+                                [...new Array(postsInRow - rowPosts.length)].map((_, i) => (
+                                    <Container key={i}></Container>
+                                ))
+                                : ''
+                        }
                     </GalleryRow>
                 ))
             }
