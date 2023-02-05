@@ -1,0 +1,22 @@
+import {typeTheme} from "./typeTheme";
+import {colors} from "./colors";
+
+export const darkTheme: typeTheme = {
+    colors: {
+        primary: colors.white,
+        inversePrimary: colors.black,
+        secondary: colors.gray,
+        darkSecondary: colors.darkGray
+    },
+    fontSizes: {
+        extraSmall: "12px",
+        small: "14px",
+        normal: "15px",
+        medium: "18px",
+        large: "22px",
+        xLarge: "24px",
+        xxLarge: "30px",
+        black: "36px"
+    },
+    bgColor: colors.white
+}
