@@ -8,16 +8,17 @@ import {ReactComponent as SearchIcon} from "./search.svg";
 import {ReactComponent as LogoIcon} from "./logo.svg";
 import {ReactComponent as SavedIcon} from "./saved.svg";
 import {ReactComponent as PostsIcon} from "./posts.svg";
-
+import {ReactComponent as CommentIcon} from "./comment.svg";
 
 export  {
+    CommentIcon,
     HomeIcon,
     LikeIcon,
-    ProfileIcon,
-    ReelsIcon,
-    SearchIcon,
     LogoIcon,
     PostsIcon,
-    SavedIcon
+    ProfileIcon,
+    ReelsIcon,
+    SavedIcon,
+    SearchIcon,
 }
 

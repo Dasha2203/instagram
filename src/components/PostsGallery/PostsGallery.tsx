@@ -62,7 +62,12 @@ const PostsGallery = () => {
                 chunksPosts.map((rowPosts, index) => (
                     <GalleryRow key={index}>
                         {rowPosts.map((post: { img: string; id: React.Key | null | undefined; }, index: any) => (
-                            <PostImage img={post.img} key={post.id}/>
+                            <PostImage
+                                key={post.id}
+                                img={post.img}
+                                likes={15}
+                                comments={23}
+                            />
                         ))}
                         {
                             rowPosts.length !== postsInRow ?
